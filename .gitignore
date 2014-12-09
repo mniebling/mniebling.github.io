@@ -1,0 +1,6 @@
+# Don’t include the compiled site output
+_site/
+
+# Don’t include lock files or Mac stuff
+*.lock
+*.DS_Store
