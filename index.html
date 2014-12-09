@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div>
+  {% for post in site.posts %}
+    <article>
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div>
+        {{ post.content | truncatewords:40}}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+    </article>
+  {% endfor %}
+</div>

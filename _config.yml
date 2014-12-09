@@ -1,0 +1,28 @@
+#
+# This file contains configuration flags for the site
+#
+
+# Site name
+name: Mike's Site
+
+# Site description
+description: Interaction Designer in Chicago
+
+# URL of avatar image
+avatar: https://avatars3.githubusercontent.com/u/319534?v=3&s=460
+
+# Markdown parser
+markdown: kramdown
+
+# Syntax highlighting engine
+highlighter: pygments
+
+# Permalink format
+permalink: /:title/
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
