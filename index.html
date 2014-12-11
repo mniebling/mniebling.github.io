@@ -2,17 +2,18 @@
 layout: default
 ---
 
-<div>
-  {% for post in site.posts %}
-    <article>
+<h1>Mike's Site</h1>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<h2>Posts</h2>
+{% for post in site.posts %}
+	<ul>
+		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	</ul>
+{% endfor %}
 
-      <div>
-        {{ post.content | truncatewords:40}}
-      </div>
+<h2>Pages</h2>
+<ul>
+	<li><a href="{{ site.baseurl }}/About">About</a></li>
+</ul>
 
-      <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+
