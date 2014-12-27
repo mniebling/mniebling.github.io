@@ -15,7 +15,7 @@ Bundler lets you use "gemfiles" to manage dependencies. Install this package man
 
 
 ##### 3. Installing Jekyll
-First, create a file called `Gemfile` (no extension) and add a source and the github-pages gem:
+If this is the first time setting things up, create a file called `Gemfile` (no extension) and add a source and the github-pages gem:
 
 ````
 source 'https://rubygems.org'
@@ -23,6 +23,8 @@ gem 'github-pages'
 ````
 
 Then run `bundle install`, which will install everything in your Gemfile. Which is just the github-pages gem. Which includes Jekyll.
+
+If this isn't the first time setting things up, the Gemfile already exists. So just navigate to the repo root and do `bundle install`.
 
 
 ##### 4. Running Jekyll Locally
