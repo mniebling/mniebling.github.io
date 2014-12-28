@@ -3,12 +3,6 @@
 /* SYNTAX HIGHLIGHTING */
 /***********************/
 
-.highlight {
-  background-color: $darkerGray;
-  padding: 5px 10px;
-  margin: 20px 0;
-}
-
 .highlight pre {
   /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
   word-break: break-all;
@@ -18,13 +12,23 @@
 code {
   font-family: monospace;
   font-size: 14px;
-  color: #999
+  color: #999;
 }
 
 /* Solarized Light Pygments */
 /* Thanks https://gist.github.com/edwardhotchkiss/2005058 */
+
 /* Comment */
-.highlight .c, .highlight .c1 { color: #586E75 }
+.highlight .c,
+/* Comment.Multiline */
+.highlight .cm,
+/* Comment.Preproc */
+.highlight .cp,
+/* Comment.Single */
+.highlight .c1,
+/* Comment.Special */
+.highlight .cs { color: #999; }
+
 /* Error */
 .highlight .err { color: #93A1A1 }
 /* Generic */
@@ -41,14 +45,7 @@ code {
 .highlight .x { color: #CB4B16 }
 /* Punctuation */
 .highlight .p { color: #93A1A1 }
-/* Comment.Multiline */
-.highlight .cm { color: #586E75 }
-/* Comment.Preproc */
-.highlight .cp { color: #859900 }
-/* Comment.Single */
-.highlight .c1 { color: #586E75 }
-/* Comment.Special */
-.highlight .cs { color: #859900 }
+
 /* Generic.Deleted */
 .highlight .gd { color: #2AA198 }
 /* Generic.Emph */
