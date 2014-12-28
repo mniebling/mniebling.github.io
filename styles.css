@@ -4,6 +4,11 @@ img {
 	max-width: 320px;
 }
 
+/* <figure> is used to delineate images following sections (<p> tags) */
+figure {
+	margin: 0;
+}
+
 blockquote {
 	margin: 2em 0 2em 1em;
 	padding: 0 0 0 0.5em;
