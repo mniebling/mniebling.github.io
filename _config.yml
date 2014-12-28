@@ -12,7 +12,7 @@ description: Interaction Designer in Chicago
 avatar: https://avatars3.githubusercontent.com/u/319534?v=3&s=460
 
 # Markdown parser
-markdown: kramdown
+markdown: redcarpet
 
 # Syntax highlighting engine
 highlighter: pygments
