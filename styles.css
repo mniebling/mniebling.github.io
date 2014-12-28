@@ -1,0 +1,12 @@
+
+/* Images need to be capped in size */
+img {
+	max-width: 320px;
+}
+
+blockquote {
+	margin: 0 0 0 1em;
+	padding: 0 0 0 0.5em;
+	border-left: 2px solid #ccc;
+	font-style: italic;
+}
