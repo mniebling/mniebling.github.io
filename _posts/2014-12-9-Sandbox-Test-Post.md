@@ -9,13 +9,13 @@ This post is a sandbox to test various features of the site.
 <section>
 Here is a section with an image. I've added a bit more text to this paragraph so that we likely wrap to a couple lines. The image is of the smaller size and disposition.
 
-![alt text](/images/testpost/1.png)
+![alt text](../images/testpost/1.png)
 </section>
 
 <section>
 Here is a section with an image. I've added a bit more text to this paragraph so that we likely wrap to a couple lines. The image is of the larger size and disposition.
 
-![alt text](/images/testpost/2.png)
+![alt text](../images/testpost/2.png)
 </section>
 
 Here is a block quote:
