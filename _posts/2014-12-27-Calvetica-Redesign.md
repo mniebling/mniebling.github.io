@@ -9,7 +9,6 @@ Here's the Calvetica home screen that I started with.
 
 ![alt text](/images/calvetica/before.png)
 
-
 The main thing I wanted to adjust was how much real estate/visual weight was given to the current year and the month picker (which is tappable — it changes the month displayed in the calendar below). Since I figure the frequency at which you need to look at a given month is inversely proportional to how close it is to today, I collapsed the month picker down to one line. The borders are faded out slightly as an affordance that the list is horizontally scrollable.
 
 Next, since I wanted to add in some extra "today" info (mostly because I'm kind of oblivious and usually don't know the current date) and the month picker change opened up some space, I decided to go with a more overtly header-y treatment at the top of the screen. Like the existing Calvetica detail pages, this section displays the full day and date, but I also swapped the Today shortcut with the settings icon so that all the "right now" stuff would be in the header.
