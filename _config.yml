@@ -20,7 +20,11 @@ highlighter: pygments
 # Permalink format
 permalink: /:title/
 
-# Exclude these files from your production _site
+# Path to site images; when called, include trailing slash
+# e.g., {{site.url}}/folder/image.png
+img: /web/images
+
+# Exclude these files from production _site
 exclude:
     - Gemfile
     - Gemfile.lock

@@ -7,7 +7,7 @@ title: Calvetica Redesign
 
 Here's the Calvetica home screen that I started with.
 
-![Calvetica: Before](/images/calvetica/before.png)
+![Calvetica: Before]({{site.img}}/calvetica/before.png)
 
 The main thing I wanted to adjust was how much real estate/visual weight was given to the current year and the month picker (which is tappable — it changes the month displayed in the calendar below). Since I figure the frequency at which you need to look at a given month is inversely proportional to how close it is to today, I collapsed the month picker down to one line. The borders are faded out slightly as an affordance that the list is horizontally scrollable.
 
@@ -17,4 +17,4 @@ I also added a badge to the "today" link in the header so that the user doesn't 
 
 Here's what it looks like after the changes.
 
-![Calvetica: After](/images/calvetica/after.png)
+![Calvetica: After]({{site.img}}/calvetica/after.png)
