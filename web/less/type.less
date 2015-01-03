@@ -1,0 +1,61 @@
+//
+// Typography
+// ------------------------------
+
+
+// Font stacks
+// --------------------
+@font-family-body:			"PT Serif", Georgia, serif;
+@font-family-headings:	"PT Sans Narrow", Helvetica, Arial, sans-serif;
+
+
+// Font weights
+// --------------------
+@font-weight-normal:	400;
+@font-weight-bold:		700;
+
+
+// Font sizes
+// --------------------
+@font-size-x-small:	0.8125em;
+@font-size-small:		0.875em;
+@font-size-base:		1em;
+@font-size-lg:			1.25em;
+@font-size-x-lg:		2em;
+
+
+// Line heights
+// --------------------
+@line-height-headings:	1.2;
+@line-height-base:			1.5;
+
+
+// Default type
+// --------------------
+body {
+	font-family:	@font-family-body;
+	font-weight:	@font-weight-normal;
+	font-size:		@font-size-base;
+	line-height: 	@line-height-base;
+	color: 				@color-black;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family:	@font-family-headings;
+	font-weight:	@font-weight-bold;
+	line-height: 	@line-height-headings;
+	color:				@color-primary;
+}
+
+h1, .h1 {
+	font-weight:	@font-weight-normal;
+	font-size: 		@font-size-x-lg;
+}
+
+h2, .h2 {}
+
+h3, .h3 {
+	font-size: 		@font-size-lg;
+	margin:				1.5em 0 0 0;
+}

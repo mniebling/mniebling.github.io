@@ -1,0 +1,51 @@
+//
+// Page silhouette
+// ------------------------------
+
+
+// Additional resets
+// --------------------
+
+// Border-box everything...
+html {
+	box-sizing: border-box;
+}
+
+// ...but with inheritance so content-box components will work
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+// No margin on lists or list items
+ul,
+li {
+	margin: 0;
+}
+
+
+// Content container
+// --------------------
+.container {
+	width: 100%;
+	padding: 1rem 2.5%;
+}
+
+@media screen and (min-width: @breakpoint-medium) {
+	.container {
+		width: 37.5rem;
+		margin: 0 auto;
+	}
+}
+
+
+// Media query breakpoints
+// --------------------
+
+// At medium, the page container fixes to the desired
+// line measure instead of occupying 100% width.
+@breakpoint-medium: 37.5rem;
+
+// At large, additional content flows out of the main column
+// into the side columns (TODO)
