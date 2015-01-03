@@ -24,5 +24,7 @@ permalink: /:title/
 exclude:
     - Gemfile
     - Gemfile.lock
+    - Guardfile
+    - Rakefile
     - LICENSE
     - README.md
