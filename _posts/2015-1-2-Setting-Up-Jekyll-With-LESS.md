@@ -29,9 +29,9 @@ I have a tiny bit of experience using Gulp on one of my side projects, so that's
 
 ### Let's use Rake
 
-Having decided on Rake, step 1 was to get it added to the project. The [Rake docs](http://docs.seattlerb.org/rake/) have helpful instructions (`gem install rake`) but I wanted to make sure that was automated when Future Me wants to set up the repo on a new machine or something. So it should probably go in the Gemfile instead.
+Having decided on Rake, step 1 was to get it added to the project. The [Rake docs](http://docs.seattlerb.org/rake/) have helpful instructions (`gem install rake`, duh) but I wanted to make sure that was automated when Future Me wants to set up the repo on a new machine or something. So it should probably go in the Gemfile instead.
 
-I headed over to http://rubygems.org/ and found the gem, then added it to the Gemfile: `gem 'rake', '~> 10.4.2'`. I took a few minutes to figure out what the [pessimistic operator](http://robots.thoughtbot.com/rubys-pessimistic-operator) is because I've never seen `~>` before. Then I committed the gemfile change, `cd` to my project directory and did `bundle install` to get the Rake gem. To confirm it worked: `bundle show rake`. Yup, there it is!
+I headed over to [RubyGems](http://rubygems.org/) and found the gem, then added it to the Gemfile: `gem 'rake', '~> 10.4.2'`. I took a few minutes to figure out what the [pessimistic operator](http://robots.thoughtbot.com/rubys-pessimistic-operator) is because I've never seen `~>` before. Then I committed the gemfile change, `cd` to my project directory and did `bundle install` to get the Rake gem. To confirm it worked: `bundle show rake`. Yup, there it is!
 
 ### Need a LESS compiler too
 
