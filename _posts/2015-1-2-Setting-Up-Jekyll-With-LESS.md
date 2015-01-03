@@ -70,6 +70,8 @@ end
 
 This task, with `:serve => true` included, causes Guard to spin up the Jekyll server when it starts. So when I run `bundle exec guard`, it now starts the Jekyll server, watches for LESS changes with the `rake` guard and watches for any other changes with the `jekyll-plus` guard. Finally, I can still commit the base main master branch and let github pages build the site without any special configuration. Perfect!!
 
+If you want to see the finished implementation, check out the project repo [here](https://github.com/mniebling/mniebling.github.io).
+
 
 
 

@@ -18,6 +18,7 @@ blockquote {
 pre {
   margin: 2em 0;
   padding: 0.5em 1em;
+  border-radius: 3px;
   background-color: #f5f5f5;
 }
 code {
@@ -27,6 +28,9 @@ code {
   border-radius: 3px;
   background-color: #f5f5f5;
   color: #C71E0C;
+}
+pre > code {
+  padding: 0;
 }
 /***********************/
 /* SYNTAX HIGHLIGHTING */
