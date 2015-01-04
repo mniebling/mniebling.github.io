@@ -66,6 +66,28 @@ h3, .h3 {
 }
 
 
+// Links
+// --------------------
+
+a {
+	color: @color-accent;
+	.transition(color 0.5s);
+}
+
+a:hover {
+	color: @color-accent-dark;
+}
+
+// Links inside paragraphs should be same color as text
+p > a {
+	color: @color-black;
+}
+
+p > a:hover {
+	color: @color-primary;
+}
+
+
 // Lists
 // --------------------
 

@@ -265,6 +265,21 @@ h3,
   font-size: 1.25em;
   margin: 1.5em 0 0 0;
 }
+a {
+  color: #1657a0;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+a:hover {
+  color: #073569;
+}
+p > a {
+  color: #444444;
+}
+p > a:hover {
+  color: #800080;
+}
 ul,
 ol,
 li {
