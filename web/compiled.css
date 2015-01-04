@@ -210,23 +210,6 @@ blockquote {
   border-left: 2px solid #ccc;
   font-style: italic;
 }
-pre {
-  margin: 2em 0;
-  padding: 0.5em 1em;
-  border-radius: 3px;
-  background-color: #f5f5f5;
-}
-code {
-  font-family: monospace;
-  font-size: 14px;
-  padding: 0 0.4em;
-  border-radius: 3px;
-  background-color: #f5f5f5;
-  color: #C71E0C;
-}
-pre > code {
-  padding: 0;
-}
 body {
   font-family: "PT Serif", Georgia, serif;
   font-weight: 400;
@@ -279,6 +262,24 @@ p > a {
 }
 p > a:hover {
   color: #800080;
+}
+code {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  padding: 0 0.4em;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  color: #1657a0;
+}
+pre {
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+pre > code {
+  padding: 0;
+  background: none;
 }
 ul,
 ol,

@@ -7,6 +7,7 @@
 // --------------------
 @font-family-body:			"PT Serif", Georgia, serif;
 @font-family-headings:	"PT Sans Narrow", Helvetica, Arial, sans-serif;
+@font-family-monospace: Menlo, Consolas, monospace;
 
 
 // Font weights
@@ -85,6 +86,34 @@ p > a {
 
 p > a:hover {
 	color: @color-primary;
+}
+
+
+// Code
+// --------------------
+
+// Inline code (backticks)
+code {
+	font-family: @font-family-monospace;
+	font-size: @font-size-small;
+	padding: 0 0.4em;
+  border-radius: 3px;
+  background-color: @color-gray-xx-light;
+  color: @color-accent;
+}
+
+// Multi-line blocks
+pre {
+	margin:	2em 0;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	background-color: @color-gray-xx-light;
+}
+
+// Don't add extra styles to code in a multi-line block
+pre > code {
+	padding: 0;
+	background: none;
 }
 
 
