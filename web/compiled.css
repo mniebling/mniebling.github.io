@@ -186,10 +186,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-ul,
-li {
-  margin: 0;
-}
 .container {
   width: 100%;
   padding: 1rem 2.5%;
@@ -260,10 +256,34 @@ h1,
   font-weight: 400;
   font-size: 2em;
 }
+h2,
+.h2 {
+  color: #444444;
+}
 h3,
 .h3 {
   font-size: 1.25em;
   margin: 1.5em 0 0 0;
+}
+ul,
+ol,
+li {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+ul > li:before {
+  content: "\0BB";
+  color: #999999;
+  float: left;
+  margin-left: -1em;
+}
+@media screen and (min-width: 37.5rem) {
+  ul,
+  ol {
+    padding: 0;
+  }
 }
 /***********************/
 /* SYNTAX HIGHLIGHTING */

@@ -40,6 +40,9 @@ body {
 	color: 				@color-black;
 }
 
+
+// Headings
+// --------------------
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family:	@font-family-headings;
@@ -53,9 +56,40 @@ h1, .h1 {
 	font-size: 		@font-size-x-lg;
 }
 
-h2, .h2 {}
+h2, .h2 {
+	color: 				@color-black;
+}
 
 h3, .h3 {
 	font-size: 		@font-size-lg;
 	margin:				1.5em 0 0 0;
+}
+
+
+// Lists
+// --------------------
+
+// No margin on lists or list items
+ul, ol, li {
+	margin: 0;
+}
+
+// Remove default list bullets
+ul {
+	list-style-type: none;
+}
+
+// Custom bullet for unordered lists
+ul > li:before {
+	content: "\0BB"; // right-pointing guillemet
+	color: @color-gray;
+	float: left;
+	margin-left: -1em;
+}
+
+// On larger screens, hang list bullets
+@media screen and (min-width: @breakpoint-medium) {
+	ul, ol {
+		padding: 0;
+	}
 }
