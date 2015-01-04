@@ -204,12 +204,6 @@ img {
 figure {
   margin: 0;
 }
-blockquote {
-  margin: 2em 0 2em 1em;
-  padding: 0 0 0 0.5em;
-  border-left: 2px solid #ccc;
-  font-style: italic;
-}
 body {
   font-family: "PT Serif", Georgia, serif;
   font-weight: 400;
@@ -300,6 +294,12 @@ ul > li:before {
   ol {
     padding: 0;
   }
+}
+blockquote {
+  margin: 2em 1em 2em 2px;
+  padding: 0 0 0 1em;
+  border-left: 2px solid #cccccc;
+  font-style: italic;
 }
 /***********************/
 /* SYNTAX HIGHLIGHTING */
