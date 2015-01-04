@@ -6,14 +6,16 @@
 
 
 // Resets & defaults
-@import "normalize.less";
-@import "vendor-prefixes.less";
+@import "web.normalize.less";
+@import "web.vendor-prefixes.less";
 
 // Site global styles
-@import "silhouette.less";
-@import "styles.less";
-@import "colors.less";
-@import "type.less";
+@import "web.silhouette.less";
+@import "web.colors.less";
+@import "web.type.less";
 
-// Specific component styles
-@import "syntax-highlighting.less";
+// Site module styles
+@import "mod.post.less";
+
+// Third-party extension styles
+@import "ext.syntax-highlighting.less";

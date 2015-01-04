@@ -196,14 +196,6 @@ html {
     margin: 0 auto;
   }
 }
-/* Images need to be capped in size */
-img {
-  max-height: 320px;
-}
-/* <figure> is used to delineate images following sections (<p> tags) */
-figure {
-  margin: 0;
-}
 body {
   font-family: "PT Serif", Georgia, serif;
   font-weight: 400;
@@ -300,6 +292,14 @@ blockquote {
   padding: 0 0 0 1em;
   border-left: 2px solid #cccccc;
   font-style: italic;
+}
+/* Images need to be capped in size */
+img {
+  max-height: 320px;
+}
+/* <figure> is used to delineate images following sections (<p> tags) */
+figure {
+  margin: 0;
 }
 /***********************/
 /* SYNTAX HIGHLIGHTING */
