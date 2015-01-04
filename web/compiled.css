@@ -293,11 +293,15 @@ blockquote {
   border-left: 2px solid #cccccc;
   font-style: italic;
 }
-/* Images need to be capped in size */
+.post-footer {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  margin: 4rem 0 0 0;
+  padding: 0.5em 0.75em;
+}
 img {
   max-height: 320px;
 }
-/* <figure> is used to delineate images following sections (<p> tags) */
 figure {
   margin: 0;
 }
