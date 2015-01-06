@@ -303,6 +303,14 @@ blockquote {
   height: 0;
   clear: both;
 }
+.big-image {
+  height: 8rem;
+  width: 100%;
+  background-image: url("/web/images/index/home-big.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #666;
+}
 .post-date {
   display: inline-block;
   font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;

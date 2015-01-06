@@ -2,44 +2,51 @@
 layout: default
 ---
 
-<h1>Mike's Site</h1>
+<div class="container">
+	<h1>Mike Niebling</h1>
+</div>
 
-<h2>Posts</h2>
+<div class="big-image"></div>
 
-<ul class="posts-list">
-	{% for post in site.posts %}
-	<li>
-		<div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-		<a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-	</li>
-	{% endfor %}
-</ul>
+<div class="container">
 
-<h2>Pages</h2>
-<ul class="pages-list">
-	<li><a class="page-title" href="{{ site.baseurl }}/About">About</a></li>
-	<li><a class="page-title" href="{{ site.baseurl }}/Projects">Projects</a></li>
-</ul>
+	<!-- All posts -->
+	<ul class="posts-list">
+		{% for post in site.posts %}
+		<li>
+			<div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+			<a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
 
+	<!-- All static pages -->
+	<h2>Pages</h2>
+	<ul class="pages-list">
+		<li><a class="page-title" href="{{ site.baseurl }}/About">About</a></li>
+		<li><a class="page-title" href="{{ site.baseurl }}/Projects">Projects</a></li>
+	</ul>
 
-<!-- Social links -->
-<div class="services-group">
-	<div class="services-text">Swing by, say hi:</div>
-	<div class="services clear-me">
-		<a href="https://www.twitter.com/mikeniebling" class="service service-twitter">
-			<i class="fa fa-lg fa-twitter"></i>
-		</a>
-		<a href="https://www.github.com/mniebling" class="service service-github">
-			<i class="fa fa-lg fa-github"></i>
-		</a>
-		<a href="https://www.soundcloud.com/thebling408" class="service service-soundcloud">
-			<i class="fa fa-lg fa-soundcloud"></i>
-		</a>
-		<a href="https://www.linkedin.com/in/michaelniebling" class="service service-linkedin">
-			<i class="fa fa-lg fa-linkedin"></i>
-		</a>
-		<a href="https://mnieblingphoto.wordpress.com" class="service service-photos">
-			<i class="fa fa-lg fa-camera-retro"></i>
-		</a>
+	<!-- Social links -->
+	<div class="services-group">
+		<div class="services-text">Swing by, say hi:</div>
+		<div class="services clear-me">
+			<a href="https://www.twitter.com/mikeniebling" class="service service-twitter">
+				<i class="fa fa-lg fa-twitter"></i>
+			</a>
+			<a href="https://www.github.com/mniebling" class="service service-github">
+				<i class="fa fa-lg fa-github"></i>
+			</a>
+			<a href="https://www.soundcloud.com/thebling408" class="service service-soundcloud">
+				<i class="fa fa-lg fa-soundcloud"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/michaelniebling" class="service service-linkedin">
+				<i class="fa fa-lg fa-linkedin"></i>
+			</a>
+			<a href="https://mnieblingphoto.wordpress.com" class="service service-photos">
+				<i class="fa fa-lg fa-camera-retro"></i>
+			</a>
+		</div>
 	</div>
+
 </div>
