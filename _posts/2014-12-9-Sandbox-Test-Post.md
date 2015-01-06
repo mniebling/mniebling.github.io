@@ -5,12 +5,11 @@ title: Sandbox Test Post
 
 This post is a sandbox to test various features of the site.
 
+![alt text]({{site.img}}/testpost/1.png)
+Here is a section with an image. I've added a bit more text to this paragraph so that we likely wrap to a couple lines. The image is of the larger size and disposition. Here is additional text to make sure we can't cheat and apply a fixed negative top margin.
 
-Here is a section with an image. I've added a bit more text to this paragraph so that we likely wrap to a couple lines. The image is of the larger size and disposition.
-<figure>![alt text]({{site.img}}/testpost/1.png)</figure>
-
+![alt text]({{site.img}}/testpost/2.png)
 Here is a section with an image. I've added a bit more text to this paragraph so that we likely wrap to a couple lines. The image is of the smaller size and disposition.
-<figure>![alt text]({{site.img}}/testpost/2.png)</figure>
 
 ## This is a level-2 header (h2 tag)
 
@@ -52,4 +51,5 @@ site.name: {{ site.name }}
 
 site.description: {{ site.description }}
 
-site.avatar: ![alt text]({{ site.avatar }})
+![alt text]({{ site.avatar }})
+site.avatar.

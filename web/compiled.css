@@ -203,6 +203,9 @@ body {
   line-height: 1.5;
   color: #444444;
 }
+p {
+  margin: 1em 0;
+}
 h1,
 h2,
 h3,
@@ -299,11 +302,10 @@ blockquote {
   margin: 4rem 0 0 0;
   padding: 0.5em 0.75em;
 }
-img {
-  max-height: 320px;
-}
-figure {
-  margin: 0;
+.post img {
+  max-height: 300px;
+  display: block;
+  margin: 2em 0 1em 0;
 }
 /***********************/
 /* SYNTAX HIGHLIGHTING */
