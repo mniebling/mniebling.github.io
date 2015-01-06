@@ -3,6 +3,31 @@
 // ------------------------------
 
 
+// Post Titles
+// --------------------
+.post-date {
+	display: inline-block;
+	font-family: @font-family-headings;
+	font-size: @font-size-small;
+	color: @color-gray;
+	width: 8.5em;
+}
+
+.post-title,
+.page-title {
+	font-family: @font-family-headings;
+	font-size: @font-size-lg;
+	text-decoration: none;
+}
+
+// No bullets on post/page lists
+ul.posts-list > li:before,
+ul.pages-list > li:before {
+	content: "";
+}
+
+// Social icons
+// --------------------
 .services-group {
 	width: 100%;
 	margin: 4rem auto;
