@@ -42,5 +42,4 @@ task :compile_less do
 	end
 
 	puts "done!"
-	puts "\n"
 end # task :compile_less
