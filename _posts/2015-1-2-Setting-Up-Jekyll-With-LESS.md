@@ -11,7 +11,7 @@ One cool thing about Jekyll is that it comes out of the box with [SASS support](
 
 The complicating factor is that I am a lowly designer and know very little about this sort of stuff. Here are some of the options I looked at and the narrative of how I got it into place with no previous Ruby dev/build experience.
 
-Before any of this stuff, the very first thing I did was to change my CSS to vanilla LESS and and link the site against a compiled CSS file that doesn't exist yet. Of course, this broke all styling, but once the compilation is running, at least I'd be able to tell it worked!
+Before any of this, the very first thing I did was to change my CSS to vanilla LESS and and link the site against a compiled CSS file that doesn't exist yet. Of course, this broke all styling, but once the compilation is running, at least I'd be able to tell it worked!
 
 ### Plugins
 
@@ -31,7 +31,7 @@ I have a tiny bit of experience using Gulp on one of my side projects, so that's
 
 Having decided on Rake, step 1 was to get it added to the project. The [Rake docs](http://docs.seattlerb.org/rake/) have helpful instructions (`gem install rake`, duh) but I wanted to make sure that was automated when Future Me wants to set up the repo on a new machine or something. So it should probably go in the Gemfile instead.
 
-I headed over to [RubyGems](http://rubygems.org/) and found the gem, then added it to the Gemfile: `gem 'rake', '~> 10.4.2'`. I took a few minutes to figure out what the [pessimistic operator](http://robots.thoughtbot.com/rubys-pessimistic-operator) is because I've never seen `~>` before. Then I committed the gemfile change, `cd` to my project directory and did `bundle install` to get the Rake gem. To confirm it worked: `bundle show rake`. Yup, there it is!
+I headed over to [RubyGems](http://rubygems.org/) and found the gem, then added it to the Gemfile: `gem 'rake', '~> 10.4.2'`. I took a few minutes to figure out what the [pessimistic operator](http://robots.thoughtbot.com/rubys-pessimistic-operator) is because I'd never seen `~>` before. Then I committed the gemfile change, `cd` to my project directory and did `bundle install` to get the Rake gem. To confirm it worked: `bundle show rake`. Yup, there it is!
 
 ### Need a LESS compiler too
 
@@ -42,7 +42,7 @@ Once that was all done, the next step was to set up the Rake task to do the comp
 Awesome! Now, I could do `rake compile_less` from the command line and it would correctly build and copy the LESS over to the target CSS file. But, I wanted this to happen automatically! So... onwards.
 
 ### Automating the LESS compilation task
-The gem I decided to use for this was [Guard](https://rubygems.org/gems/guard). However, when I started reading the Guard docs, my initial reaction was total confusion. It seemed like Guard would let me handle the compilation itself, but all I wanted to do was run my fancy new Rake task when a .less file changed.
+The gem I decided to use for this was [Guard](https://rubygems.org/gems/guard). However, when I started reading the Guard docs, they seemed completely confusing. It seemed like Guard would let me handle the compilation itself, but all I wanted to do was run my fancy new Rake task when a .less file changed.
 
 So I did a bit more Googling and found something that seemed relevant: [guard-rake](https://github.com/rubyist/guard-rake). Awesome! I had Guard installed, so I went ahead and Gemfiled guard-rake, then did `guard init rake`, which automatically created a starter Guardfile in my repo root for me.
 
