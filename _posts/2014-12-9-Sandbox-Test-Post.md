@@ -3,7 +3,7 @@ layout: post
 title: Sandbox Test Post
 ---
 
-This post is a sandbox to test various features of the site.
+This post is a sandbox to test various features of the site. Testing Windows?!
 
 ![alt text]({{site.img}}/testpost/1.png)
 Here is a section with an image. I've added a bit more text to this paragraph so that we likely wrap to a couple lines. The image is of the larger size and disposition. Here is additional text to make sure we can't cheat and apply a fixed negative top margin.

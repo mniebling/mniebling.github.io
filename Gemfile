@@ -12,7 +12,9 @@ gem 'rake', '~> 10.4.2'
 gem 'less', '~> 2.6.0'
 
 # Bridges Javascript and Ruby
-gem 'therubyracer', '~> 0.12.1'
+# Don't install on Windows, though; it's broken there :(
+gem 'therubyracer', '~> 0.12.1', :platform => :ruby
+
 
 # Instead of basic Jekyll local watching,
 # we'll use Guard so that we can live compile LESS as well:
