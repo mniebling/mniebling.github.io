@@ -304,25 +304,45 @@ blockquote {
   clear: both;
 }
 .big-image {
-  height: 8rem;
+  height: 10rem;
   width: 100%;
-  background-image: url("/web/images/index/home-big.jpg");
+  padding: 1rem 0 0 0;
+  text-align: center;
+  background-image: url("/web/images/index/home-big-1.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-color: #666;
 }
+.home-header-title {
+  width: 6em;
+  margin: 0 auto;
+  padding: 0.2em 0;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+}
+.posts-list-item {
+  display: table-row;
+}
 .post-date {
-  display: inline-block;
+  display: table-cell;
   font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
   font-size: 0.875em;
   color: #999999;
   width: 8.5em;
+}
+.post-title {
+  display: table-cell;
 }
 .post-title,
 .page-title {
   font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   text-decoration: none;
+}
+.pages-list,
+.posts-list {
+  padding: 0;
 }
 ul.posts-list > li:before,
 ul.pages-list > li:before {
@@ -339,36 +359,21 @@ ul.pages-list > li:before {
 }
 .services {
   width: 100%;
-  margin: 0;
+  margin: 0.5rem 0 0 0;
 }
-.service {
-  float: left;
+i.service {
   text-align: center;
-  width: 20%;
-  margin: 0;
-  padding: 0.25em 0;
+  border-radius: 50%;
+  margin: 0 0.5em 0 0;
+  background-color: #666;
   color: #ffffff;
   -webkit-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
-}
-.service:hover {
-  color: #ffffff;
-}
-.service-twitter {
-  background-color: #55ACEE;
-}
-.service-github {
-  background-color: #4F5D88;
-}
-.service-soundcloud {
-  background-color: #FF5100;
-}
-.service-linkedin {
-  background-color: #0076B7;
-}
-.service-photos {
-  background-color: #00BF77;
+  font-size: 21px;
+  height: 2.3125rem;
+  width: 2.3125rem;
+  line-height: 2.3125rem;
 }
 .service-twitter:hover {
   background-color: #338ACC;
@@ -384,12 +389,6 @@ ul.pages-list > li:before {
 }
 .service-photos:hover {
   background-color: #009D55;
-}
-.service:first-child {
-  border-radius: 5px 0 0 5px;
-}
-.service:last-child {
-  border-radius: 0 5px 5px 0;
 }
 .services-text {
   font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
