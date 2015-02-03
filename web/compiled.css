@@ -331,6 +331,8 @@ blockquote {
 }
 .post-title {
   display: table-cell;
+  line-height: 1.3125;
+  padding-bottom: 0.5rem;
 }
 .post-title,
 .page-title {

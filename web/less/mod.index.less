@@ -46,6 +46,12 @@
 
 .post-title {
 	display: table-cell;
+	line-height: 1.3125;
+
+	// Because the list is laid out using display: table,
+	// we can't use margin on the <li> tags. Instead, we need to
+	// add padding to the contents so the cells pick up on it.
+	padding-bottom: 0.5rem;
 }
 
 .post-title,
