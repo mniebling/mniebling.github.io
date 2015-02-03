@@ -249,9 +249,6 @@ a:hover {
 p > a {
   color: #444444;
 }
-p > a:hover {
-  color: #800080;
-}
 code {
   font-family: Menlo, Consolas, monospace;
   font-size: 0.875em;
