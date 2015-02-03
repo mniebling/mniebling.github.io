@@ -14,6 +14,10 @@ avatar: https://avatars3.githubusercontent.com/u/319534?v=3&s=460
 # Markdown parser
 markdown: redcarpet
 
+# Enable typographic quotes and dashes
+redcarpet:
+    extensions: ['smart']
+
 # Syntax highlighting engine
 highlighter: pygments
 
