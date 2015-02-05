@@ -3,12 +3,12 @@ layout: post
 title: The Guardian's Colorblind-Unfriendly Match Form Display
 ---
 
-The Guardian's [football coverage](http://www.theguardian.com/football) is both thorough and attractively presented, but there's one element of their design that is a surprising miss. In each Premier League article, they show a visualization that describes a side's performance over the last five matches. Cool info, but heaven help you if you check out this table and also have one of the forms of [red-green color blindness](http://www.color-blindness.com/deuteranopia-red-green-color-blindness/).
+The Guardian's [football coverage](http://www.theguardian.com/football) is both thorough and attractively presented, but there's one element of their design that is a surprising miss. In each Premier League article, they show a visualization that describes a side's performance over the last five matches. Cool info, but heaven help you if you check out this table and also have a form of red-green color blindness (like [protanopia or deuteranopia](http://www.color-blindness.com/deuteranopia-red-green-color-blindness/)).
 
-Red-green is the most common color vision deficiency, and it's something that designers should develop an eye for, just the same as badly-kerned fonts or misaligned edges. The trigger is simple --- if something in the design uses *only* color to communicate information, that's a problem. Check it out:
+Red-green is the most common color vision deficiency, affecting around 8% of males. It's common enough that I think designers should develop an eye for color accessibility issues just like we should notice badly-kerned fonts or misaligned edges. The trigger is simple --- if something in the design uses *only* color to communicate information, that's a problem. Check it out:
 
 ![Match Form: 1]({{site.img}}/guardianmatchform/1.png)
-The match form is shown as five vertical lines, with red for losses, green for wins and gray for draws. But to a user with red-green colorblindness (protanopia is one type), the differences are imperceptible.
+The match form is shown as five vertical lines, with red for losses, green for wins and gray for draws. But to a viewer with a red-green color deficiency, the differences are imperceptible.
 
 The design solution is to communicate the information with *any* other visual attribute in addition to color. For example, we could change the dashes to letters that indicate the outcome:
 
