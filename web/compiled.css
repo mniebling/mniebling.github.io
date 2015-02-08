@@ -319,6 +319,29 @@ blockquote {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
 }
+.pages-list {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0.25rem 0;
+  background-color: #f4edf4;
+  font-size: 0;
+}
+.pages-list li {
+  display: inline-block;
+  font-size: 1rem;
+}
+.pages-list li:not(:last-child):after {
+  content: '•';
+  color: #999999;
+  margin: 0 0.5rem;
+}
+.pages-list a {
+  color: #4d004d;
+}
+.pages-list a:hover {
+  color: #00b4cc;
+}
 .posts-list-item {
   display: table-row;
 }
@@ -340,7 +363,6 @@ blockquote {
   font-size: 1.125em;
   text-decoration: none;
 }
-.pages-list,
 .posts-list {
   padding: 0;
 }

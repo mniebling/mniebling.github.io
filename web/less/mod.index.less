@@ -30,6 +30,41 @@
 }
 
 
+// Static Page Links
+// --------------------
+.pages-list {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0.25rem 0;
+	background-color: #f4edf4;
+
+	// Fix whitespace in HTML showing up in page
+	font-size: 0;
+}
+
+.pages-list li {
+	display: inline-block;
+
+	// Fix whitespace in HTML showing up in page
+	font-size: 1rem;
+}
+
+.pages-list li:not(:last-child):after {
+	content: '•';
+	color: @color-gray;
+	margin: 0 0.5rem;
+}
+
+.pages-list a {
+	color: @color-primary-dark;
+}
+
+.pages-list a:hover {
+	color: @color-accent-light;
+}
+
+
 // Post Titles
 // --------------------
 .posts-list-item {
@@ -61,8 +96,7 @@
 	text-decoration: none;
 }
 
-// No bullets on post/page lists
-.pages-list,
+// No bullets on post list
 .posts-list {
 	padding: 0;
 }
