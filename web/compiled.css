@@ -303,11 +303,11 @@ blockquote {
 .big-image {
   height: 10rem;
   width: 100%;
-  padding: 2.5rem 0 0 0;
+  padding: 0;
   text-align: center;
   background-image: url("/web/images/index/home-big-1.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-color: #666;
 }
 .home-header-title {
@@ -316,15 +316,21 @@ blockquote {
   font-size: 2.25em;
   padding: 0.2em 0;
   color: #4d004d;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.55);
   border-radius: 6px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 .pages-list {
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 0.25rem 0;
-  background-color: #f4edf4;
+  background-color: #4e1c4e;
   font-size: 0;
 }
 .pages-list li {
@@ -337,7 +343,7 @@ blockquote {
   margin: 0 0.5rem;
 }
 .pages-list a {
-  color: #4d004d;
+  color: #dddddd;
 }
 .pages-list a:hover {
   color: #00b4cc;
