@@ -343,7 +343,7 @@ blockquote {
   margin: 0 0.5rem;
 }
 .pages-list a {
-  color: #dddddd;
+  color: #f1f1f1;
 }
 .pages-list a:hover {
   color: #00b4cc;
@@ -422,6 +422,24 @@ i.service {
   font-family: "PT Sans Narrow", Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #999999;
+}
+.project {
+  margin: 0 0 4rem 0;
+}
+.project-image {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  box-shadow: 0px 0px 3px #999999;
+}
+.project-image img {
+  height: 90px;
+  width: 160px;
+}
+.project h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 1rem;
 }
 .post-footer {
   background-color: #f1f1f1;
