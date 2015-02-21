@@ -9,6 +9,26 @@
 	margin: 0 0 4rem 0;
 }
 
+@media screen and (min-width: @breakpoint-large) {
+	.project {
+		margin-bottom: 2.5rem;
+	}
+}
+
+// At small width, we don't want this div to have any effect
+.project-info {
+	display: inline;
+}
+
+@media screen and (min-width: @breakpoint-large) {
+	.project-info {
+		display: inline-block;
+		max-width: 22rem;
+		vertical-align: top;
+		padding-left: 0.75rem;
+	}
+}
+
 .project-image {
 	display: inline-block;
 	vertical-align: middle;
@@ -17,7 +37,6 @@
 }
 
 .project-image img {
-	height: 90px;
 	width: 160px;
 }
 
@@ -25,10 +44,17 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 0 0 1rem;
+	max-width: 8rem;
 }
 
 @media screen and (min-width: @breakpoint-medium) {
 	.project h3 {
+		max-width: 16rem;
+	}
+}
 
+@media screen and (min-width: @breakpoint-large) {
+	.project h3 {
+		margin: 0;
 	}
 }
