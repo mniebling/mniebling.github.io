@@ -21,8 +21,47 @@
 
 .post-header {
 	width: 100%;
-	padding: 0.25rem 0.75rem;
 	background-color: @color-gray-xx-light;
 	font-family: @font-family-headings;
-	text-align: center;
+}
+
+.post-header .container {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.post-header-left {
+	float: left;
+}
+
+.post-header-right {
+	float: right;
+}
+
+.post-header-site-name {
+	color: @color-black;
+	font-weight: @font-weight-bold;
+	text-decoration: none;
+}
+
+.post-header li {
+	display: inline-block;
+
+	// Fix whitespace in HTML showing up in page
+	font-size: 1rem;
+}
+
+.post-header li:not(:last-child):after {
+	content: '•';
+	color: @color-gray;
+	margin: 0 0.5rem;
+}
+
+// No bullets on post list
+.post-header ul {
+	padding: 0;
+}
+
+.post-header ul > li:before {
+	content: "";
 }
