@@ -1,7 +1,7 @@
 mniebling.github.io
 -------------------
 
-Mike's design & project [site](https://mniebling.github.io).
+Mike's design & project [site](http://www.mikeniebling.com).
 
 
 ### Setup on Mac
