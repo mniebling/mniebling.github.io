@@ -338,7 +338,7 @@ blockquote {
   font-size: 1rem;
 }
 .pages-list li:not(:last-child):after {
-  content: '•';
+  content: '\2022';
   color: #999999;
   margin: 0 0.5rem;
 }
@@ -503,7 +503,7 @@ i.service {
   font-size: 1rem;
 }
 .post-header li:not(:last-child):after {
-  content: '•';
+  content: '\2022';
   color: #999999;
   margin: 0 0.5rem;
 }
