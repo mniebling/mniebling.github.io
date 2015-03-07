@@ -8,6 +8,7 @@ date: 2015-03-06
 
 While Foogenda fills a useful niche for us, the app is also a platform for us to research, learn and execute on things we may not get to do during our day jobs. I've learned a *ton* on this project and we're barely even to the MVP stage so far.
 
+
 ### What we're using
 
 Foogenda is a web app that's designed from a mobile-first, adaptive design standpoint. I stick primarily to the client-side, doing all of the design and styles and some of the Javascript. My counterpart does the rest of the client code and all of the C# API.
@@ -15,6 +16,7 @@ Foogenda is a web app that's designed from a mobile-first, adaptive design stand
 Our client stack consists of [Ember.js](http://www.emberjs.com) with [LESS](http://lesscss.org) as the CSS preprocessor. We don't use Ember Data or Ember CLI, but we do use [Gulp](http://gulpjs.com) for builds, [Appveyor](http://www.appveyor.com) for CI/deployment and [Azure](http://azure.microsoft.com/en-us/services/websites/) for web hosting at the moment. Before Foogenda, I didn't know anything about any of these technologies, but now I'm almost punching my weight as a front-end dev.
 
 Typically my professional work consists of handing off my designs to others for implementation, so it's been really fascinating to straddle the fence and try to get my own ideas to work. I've found it can be tough not to compromise on the design when something doesn't work right out of the box. But at the same time, my sense of what can be easy or difficult to implement is getting better and better, which helps lower the cycle time between mockups and reality.
+
 
 ### Mobile-first
 

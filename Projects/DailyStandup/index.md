@@ -1,7 +1,68 @@
 ---
 layout: post
 title: Daily Standup
-date: 2015-02-21
+date: 2015-03-06
 ---
 
-This is the project page for Permuta Daily Standup.
+DailyStandup is a Windows 8 tablet application that I designed at Sonoma Partners for [Permuta Technologies](http://www.permuta.com/). Permuta's main product is called DefenseReady, a platform for operations management that is used by many organizations in the U.S. military, law enforcement and civilian government communities.
+
+The app is available in the [Windows 8 App Store](http://apps.microsoft.com/windows/en-us/app/defenseready-daily-standup/c2e5d633-7592-4c27-b8a5-012188056c1d) for download, along with a set of anonymized demo data for exploration.
+
+
+### What it's for
+
+At its core, DailyStandup is a data visualization app that revolves around a concept called PERSTEMPO. [PERSTEMPO](http://www.defense.gov/news/newsarticle.aspx?id=42131) (which stands for Personnel Tempo -- I know, I know) is a score that tracks how many nights a soldier has spent away from home. Once the score passes a certain threshold, that soldier is not supposed to be deployed until it levels off.
+
+However, commanders didn't have very good visibility to this data. As a result, soldiers were getting put back into the field even with high PERSTEMPO scores, causing an increase in burnout, family problems and even suicides.
+
+The goal of DailyStandup, then, is to give mission planners a tool to better visualize and understand the PERSTEMPO of the units under their control. It helps them find people with critical specialties while avoiding those who are being overused.
+
+So the app has a great cause and an interesting problem space (I love data viz problems). Here are some of the more interesting aspects of its design.
+
+
+### Direct manipulation / filtering UI
+
+As a data exploration app, (INSERT A TUFTE QUOTE OR SOMETHING), the main actions are filtering and navigating the hierarchies. The main hierarchy consists of units, which in the PERSTEMPO view are displayed as large, touchable columns. The columns provide both a visual of the PERSTEMPO scores and a way to tap through and see that unit's constituents.
+
+(insert screenshot of main UI)
+
+The filtering options are always present on the left (the content scrolls horizontally on the right -- this is a typical Win 8 interaction pattern) and also change the view of the data. For example, changing the filter from Unit to Service Branch changes the groupings like so:
+
+(insert screenshot of by service branch)
+
+At the bottom level of the hierarchy, a unit is made up of individuals. Once the user is this far down in the hierarchy, the columns are replaced with individual photos and color-banded bars representing their tempo scores. The color scale is a sequential scheme chosen from the [ColorBrewer](http://bl.ocks.org/mbostock/5577023) collection to be color-blind friendly and to exhibit maximum perceptual difference.
+
+(insert screenshot of colors and colorblind version)
+
+
+### The PERSTEMPO chart
+
+For more info on a specific person, the user can tap into one of the photos and see even more detail. Here, the soldier's PERSTEMPO is displayed in a rolling line chart, where the shaded area under the curve represents their score at that point in time (future assignments are included in the projection) and the orange bar represents the undesirable threshold.
+
+The shading isn't strictly necessary, but it draws the eye and helps establish the blue data as the 'main' measure.
+
+Also, because PERSTEMPO is tracked in a rolling two-year timeframe, the chart is centered on the current date. I represented this as a visually darker vertical gridline on top of the lighter month gridlines and called it out further with the additional bold label below the *x*-axis.
+
+
+### Bullet charts
+
+Although the color ranges help to visualize the PERSTEMPO scores among units, there's another view in the app that shows staffing data against alloted maximums. This is a textbook use case for Stephen Few's [bullet charts], where the value is encoded by a visually stronger bar on top of a lighter background bar encoding the range.
+
+(insert screenshot of strength view with bullet charts)
+
+Each bullet chart is scaled to percentages so that the user can make relevant comparisons between a units whose allotments may be several orders of magnitude apart. The grid ticks are placed at 25% intervals and the darker gray range bar represents 100% of the allotment (some may go over, so the lighter bar displays up to 125% capacity).
+
+This view, unlike most of the app, is laid out vertically; the 100% mark becomes a single visual reference point as the user scrolls through the data, so they can make comparisons with minimal eye movement across the canvas.
+
+
+### Carefully choosing scales for map data
+
+Another interesting visualization is the map view, where soldiers are plotted geographically; the number of people at a given location is encoded as the radius of a circle centered on their location. The goal is to get a visual sense of *where* the commander's resources are located.
+
+However, these types of geographic displays are very often misleading. For one thing, a map chart can end up encoding [population density]() instead of whatever it's supposed to encode, because more dense areas often have more of *everything* in them.
+
+And in our case, using circles to encode the values can also be problematic because [people are bad at visualizing differences in circle radius](). To minimize these issues, I used a power scale for the circles, so their area was scaled roughly to the order of magnitude of the data point. This way, a point representing 1,000 soldiers is larger than a point representing 1 soldier, but only 4 times larger instead of 1,000 times.
+
+(insert screenshot of map view)
+
+Another aspect of the data that lends itself to this approach is that there aren't a ton of individual points (they tend to be clustered around military bases). If the number of locations increased, you could imagine the circles would become very noisy and we'd have to figure out a different way to visualize the data.
