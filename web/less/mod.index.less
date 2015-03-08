@@ -147,11 +147,30 @@ i.service {
 	line-height: 2.3125rem;
 }
 
-.service-twitter:hover		{ background-color: #338ACC; }
-.service-github:hover			{ background-color: #2D3B66; }
-.service-soundcloud:hover	{ background-color: #DD3000; }
-.service-linkedin:hover		{ background-color: #005495; }
-.service-photos:hover			{ background-color: #009D55; }
+.no-touch .service-twitter:hover,
+.service-twitter:active	{
+	background-color: #338ACC;
+}
+
+.no-touch .service-github:hover,
+.service-github:active {
+	background-color: #2D3B66;
+}
+
+.no-touch .service-soundcloud:hover,
+.service-soundcloud:active {
+	background-color: #DD3000;
+}
+
+.no-touch .service-linkedin:hover,
+.service-linkedin:active {
+	background-color: #005495;
+}
+
+.no-touch .service-photos:hover,
+.service-photos:active {
+	background-color: #009D55;
+}
 
 .services-text {
 	font-family: @font-family-headings;

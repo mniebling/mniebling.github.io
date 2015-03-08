@@ -403,19 +403,24 @@ i.service {
   width: 2.3125rem;
   line-height: 2.3125rem;
 }
-.service-twitter:hover {
+.no-touch .service-twitter:hover,
+.service-twitter:active {
   background-color: #338ACC;
 }
-.service-github:hover {
+.no-touch .service-github:hover,
+.service-github:active {
   background-color: #2D3B66;
 }
-.service-soundcloud:hover {
+.no-touch .service-soundcloud:hover,
+.service-soundcloud:active {
   background-color: #DD3000;
 }
-.service-linkedin:hover {
+.no-touch .service-linkedin:hover,
+.service-linkedin:active {
   background-color: #005495;
 }
-.service-photos:hover {
+.no-touch .service-photos:hover,
+.service-photos:active {
   background-color: #009D55;
 }
 .services-text {
