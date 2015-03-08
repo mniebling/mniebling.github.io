@@ -24,8 +24,9 @@ We want Foogenda to be useful and usable across all types of device and screen s
 
 One is a *card* metaphor similar to the components from Google's Material Design. Cards allow us to present large, touch-friendly controls that work well for touch interactions and still make sense with a mouse and keyboard. For example, here's our text field card -- the whole card is the input, so it gets all the native focus and accessibility benefits while still looking custom:
 
-(insert codepen of input card demo)
+<p data-height="250" data-theme-id="12949" data-slug-hash="wBEqwy" data-default-tab="result" data-user="mniebling" class='codepen'>See the Pen <a href='http://codepen.io/mniebling/pen/wBEqwy/'>wBEqwy</a> by Mike Niebling (<a href='http://codepen.io/mniebling'>@mniebling</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Another common use for the cards is as a front-end for selection. Instead of presenting selection options in a `<select>`, we take a cue from [this excellent article]() by WHOS IT BY? and present what we call an "overlay panel" to make the choice. This buys us much more real estate, avoids the native selection widgets (which aren't always ideal), and gives us a chance to build custom UI around the selection that enhances usability.
+Another common use for the cards is as a front-end for selection. Instead of presenting selection options in a `<select>`, we take a cue from [this excellent article](https://medium.com/@mibosc/responsive-design-why-and-how-we-ditched-the-good-old-select-element-bc190d62eff5) (by Mikkel Bo Schmidt at Tradeshift), and present what we call an "overlay panel" to make the choice. This buys us much more real estate, avoids the native selection widgets (which aren't always ideal), and gives us a chance to build custom UI around the selection that enhances usability.
 
-(insert screenshot of invites overlay panel)
+![Foogenda: 1]({{site.img}}/projects/foogenda/1.png)
