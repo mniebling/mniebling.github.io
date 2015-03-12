@@ -483,6 +483,9 @@ i.service {
   display: block;
   margin: 1em 0 1em 0;
 }
+.post img.is-zoomable {
+  cursor: zoom-in;
+}
 .post-header {
   width: 100%;
   background-color: #f1f1f1;

@@ -6,13 +6,13 @@
 $(function () {
 
 	// Post images should have lightbox-zoom functionality
-	var popupImages = $('.post img');
+	var $popupImages = $('.post img');
 
-	popupImages.each(function () {
+	$popupImages.each(function () {
 		$(this).attr('data-mfp-src', $(this).attr('src'));
 	});
 
-	$('.post img').magnificPopup({
+	$popupImages.magnificPopup({
 		type: 'image',
 
 		mainClass: 'mfp-with-zoom',
@@ -23,5 +23,9 @@ $(function () {
 			easing: 'ease-in-out',
 		}
 	});
+
+	// We will want to style it differently in CSS if the
+	// image has been successfully enhanced
+	$popupImages.addClass('is-zoomable');
 
 });
