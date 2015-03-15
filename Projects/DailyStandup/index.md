@@ -22,7 +22,13 @@ So the app has a great cause and an interesting problem space (I love data viz p
 
 ### Direct manipulation / filtering UI
 
-As a data exploration app, (INSERT A TUFTE QUOTE OR SOMETHING), the main actions are filtering and navigating the hierarchies. The main hierarchy consists of units, which in the PERSTEMPO view are displayed as large, touchable columns. The columns provide both a visual of the PERSTEMPO scores and a way to tap through and see that unit's constituents.
+> High-density designs also allow viewers to select, to narrate, to recast and personalize data for their own uses.
+>
+> -Edward Tufte, Envisioning Information
+
+This app is designed to encourage exploration and comparison through a large hierarchy of people and units. I tried to support this by providing consistent, high-detail displays and a direct manipulation model where the actual data is the navigation interface.
+
+For example, in the default view, units are displayed as large, touchable columns. The columns provide a high-level visual of the PERSTEMPO scores, data about the scale to allow comparisons, and a way to tap through and see that unit's constituents.
 
 ![DailyStandup: Unit groupings]({{site.img}}/projects/dailystandup/units.png)
 
@@ -30,11 +36,11 @@ The filtering options are always present on the left (the content scrolls horizo
 
 ![DailyStandup: Skill groupings]({{site.img}}/projects/dailystandup/skills.png)
 
-At the bottom level of the hierarchy, a unit is made up of individuals. Once the user is this far down in the hierarchy, the columns are replaced with individual photos and color-banded bars representing their tempo scores.
+At the bottom level of the hierarchy, a unit is made up of individuals. Once the user arrives at this level, the columns are replaced with individual photos and color-banded bars representing their tempo scores.
 
 ![DailyStandup: Drilldown]({{site.img}}/projects/dailystandup/drilldown.png)
 
-The color scale used throughout the app is a sequential scheme chosen from the [ColorBrewer](http://bl.ocks.org/mbostock/5577023) collection to be color-blind friendly and to exhibit maximum perceptual difference. You can see below that the "worse" scores are more visually intense, which is good because those are the scores we want to draw attention to!
+The color scale used throughout the app is a sequential scheme chosen from the [ColorBrewer](http://bl.ocks.org/mbostock/5577023) collection to exhibit maximum perceptual difference and also to be usable for viewers with color vision deficiencies. You can see below that the "worse" scores are more visually intense, which is good because those are the scores we want to draw attention to!
 
 ![DailyStandup: Color scales]({{site.img}}/projects/dailystandup/colors.png)
 
@@ -58,9 +64,9 @@ Although the color ranges help to visualize the PERSTEMPO scores among units, th
 
 ![DailyStandup: Bullet charts]({{site.img}}/projects/dailystandup/bullets.png)
 
-Each bullet chart is scaled to percentages so that the user can make relevant comparisons between a units whose allotments may be several orders of magnitude apart. The grid ticks are placed at 25% intervals and the darker gray range bar represents 100% of the allotment (some may go over, so the lighter bar displays up to 125% capacity).
+Each bullet chart is scaled to percentages so that the user can make relevant comparisons between units whose allotments may be several orders of magnitude apart. The grid ticks are placed at 25% intervals and the darker gray range bar represents 100% of the allotment (some may go over, so the lighter bar displays up to 125% capacity).
 
-This view, unlike most of the app, is laid out vertically; the 100% mark becomes a single visual reference point as the user scrolls through the data, so they can make comparisons with minimal eye movement across the canvas.
+This view, unlike most of the app, is laid out vertically; the 100% mark becomes a visual reference point as the user scrolls through the data, so they can make comparisons with minimal eye movement across the canvas.
 
 
 ### Carefully choosing scales for map data
