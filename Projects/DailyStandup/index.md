@@ -11,13 +11,13 @@ The app is available in the [Windows 8 App Store](http://apps.microsoft.com/wind
 
 ### What it's for
 
-At its core, DailyStandup is a data visualization app that revolves around a concept called PERSTEMPO. [PERSTEMPO](http://www.defense.gov/news/newsarticle.aspx?id=42131) (which stands for Personnel Tempo -- I know, I know) is a score that tracks how many nights a soldier has spent away from home. Once the score passes a certain threshold, that soldier is not supposed to be deployed until it levels off.
+At its core, DailyStandup is a data visualization app that revolves around a concept called PERSTEMPO. [PERSTEMPO](http://www.defense.gov/news/newsarticle.aspx?id=42131) (which stands for Personnel Tempo... heh) is a score that tracks how many nights a soldier has spent away from home. Once the score passes a certain threshold, that soldier is not supposed to be deployed until it levels off.
 
 However, commanders didn't have very good visibility to this data. As a result, soldiers were getting put back into the field even with high PERSTEMPO scores, causing an increase in burnout, family problems and even suicides.
 
 The goal of DailyStandup, then, is to give mission planners a tool to better visualize and understand the PERSTEMPO of the units under their control. It helps them find people with critical specialties while avoiding those who are being overused.
 
-So the app has a great cause and an interesting problem space (I love data viz problems). Here are some of the more interesting aspects of its design.
+So the app has a great cause and an interesting problem space (I really enjoy data vis work). Here are some of the more interesting aspects of its design.
 
 
 ### Direct manipulation / filtering UI
