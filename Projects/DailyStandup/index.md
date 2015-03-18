@@ -75,7 +75,7 @@ Another interesting visualization is the map view, where soldiers are plotted ge
 
 However, these types of geographic displays are very often misleading. For one thing, a map chart can end up encoding [population density](http://junkcharts.typepad.com/junk_charts/2010/08/different-pictures-of-unemployment-.html) instead of whatever it's supposed to encode, because more dense areas often have more of *everything* in them.
 
-And in our case, using circles to encode the values can also be problematic because [people are bad at visualizing differences in area](http://www.perceptualedge.com/articles/08-21-07.pdf) [PDF]. To minimize these issues, I used a power scale for the circles, so their area was scaled roughly to the order of magnitude of the data point. This way, a point representing 1,000 soldiers is larger than a point representing 1 soldier, but only 4 times larger instead of 1,000 times.
+And in our case, using circles to encode the values can also be problematic because [people are bad at visualizing differences in area](http://www.perceptualedge.com/articles/08-21-07.pdf) [PDF]. To minimize these issues, I used a [log scale](http://en.wikipedia.org/wiki/Logarithmic_scale) for the circles, so their area was scaled roughly to the order of magnitude of the data point. This way, a point representing 1,000 soldiers is larger than a point representing 1 soldier, but only 4 times larger instead of 1,000 times.
 
 ![DailyStandup: Map view]({{site.img}}/projects/dailystandup/map.png)
 
