@@ -11,6 +11,6 @@ My wife Esther and I own a condo in lovely [Uptown, Chicago](http://en.wikipedia
 
 I have a lot of hobbies that tend to cycle through the forefront of my attention. It's good because I love to be learning new things, but also challenging because I probably won't end up mastering any of them. Right now, I'm focused on [stocking the bar](https://www.pinterest.com/michaelniebling/bar-wishlist/) and learning about craft cocktails, partner dancing with my wife (we do Latin, ballroom & tango at [Sway](http://www.swaydancechicago.com/) on the west side), cooking, learning Spanish, DJing and running.
 
-Here's a picture! This is Esther and I practicing our wedding dance:
+Here's a picture! This is Esther and me practicing our wedding dance:
 
 ![Mike and Esther]({{site.img}}/about/self.jpg)
