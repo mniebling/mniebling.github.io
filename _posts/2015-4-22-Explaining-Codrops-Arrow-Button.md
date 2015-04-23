@@ -14,7 +14,7 @@ For this post, I'm looking at their animated arrow button, in the green section 
 
 First, let's set up some styles for the basic button. In our markup, we'll use a `btn` class for some basic styles and a `btn-arrow` class for styles that are specific to this effect. That way, it's easy to drop this into a project with already existing buttons.
 
-Most of these styles don't matter to the final product, but one thing that's going to be critical later is making sure the button has `position: relative` set. This is to create a parent context so that we can absolutely position the arrow later.
+Most of these styles don't matter to the final product, but one thing that's going to be critical later is making sure the button has `position: relative` set. This is to create a parent [positioning context](http://blog.teamtreehouse.com/css-positioning) so that we can absolutely position the arrow later.
 
 ```html
 <button class="btn btn-arrow">
