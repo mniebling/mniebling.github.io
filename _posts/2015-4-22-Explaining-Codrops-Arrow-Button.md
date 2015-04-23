@@ -18,7 +18,7 @@ Most of these styles don't matter to the final product, but one thing that's goi
 
 ```html
 <button class="btn btn-arrow">
-  <span>Continue</span>
+  <span>Login</span>
 </button>
 ```
 
@@ -101,7 +101,7 @@ Here, `left: 75%` sets the ending position of the arrow, which may need to be tw
 
 ### Last but not least... polish
 
-We've got the arrow looking good, but many of Codrops' effects also have cool `active` states. We'll change the color and add a small shrinking animation to give the user feedback when they click or tap the button.
+We've got the arrow looking good, but many of Codrops' effects also have cool `active` states. We'll change the color and add a small shrinking animation to give the user feedback when they click or tap the button. (Since we're shrinking the button, remember that we need to shrink the arrow as well.)
 
 ```css
 .btn:active {
@@ -111,7 +111,14 @@ We've got the arrow looking good, but many of Codrops' effects also have cool `a
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
 }
+
+.btn-arrow:active:before {
+  -webkit-transform: scale(0.95), translateY(-50%);
+  transform: scale(0.95), translateY(-50%);
+}
 ```
+
+For bonus points, we'd use something like [Modernizr](http://modernizr.com/) to detect touch screens and apply our hover styles selectively. This is because `hover` states tend to be sticky on touch browsers ([more info](http://stackoverflow.com/questions/17233804/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices)). Since we're not doing that, this last button will show the arrow once when tapped on a touchscreen.
 
 Here's the final result:
 
