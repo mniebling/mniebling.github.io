@@ -5,7 +5,10 @@
 
 $(function () {
 
+	//
 	// Post images should have lightbox-zoom functionality
+	//
+	// -------------------------------------------------------
 	var $popupImages = $('.post img');
 
 	$popupImages.each(function () {
@@ -28,4 +31,12 @@ $(function () {
 	// image has been successfully enhanced
 	$popupImages.addClass('is-zoomable');
 
+
+	//
+	// External links should open in a new browser tab
+	//
+	// -------------------------------------------------------
+	$(document.links).filter(function() {
+    return this.hostname != window.location.hostname;
+	}).attr('target', '_blank');
 });
