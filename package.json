@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node tasks/build.js",
     "build:prod": "node tasks/build.js",
+    "start": "browser-sync start --config browsersync.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/mniebling/mikeniebling-dot-com#readme",
   "devDependencies": {
+    "browser-sync": "2.26.7",
     "copy-dir": "1.2.0",
     "rimraf": "3.0.0"
   }
