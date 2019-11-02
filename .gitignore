@@ -1,5 +1,6 @@
 # Don’t include the compiled site output
-_site/
+dist
 
 # Don’t include Mac stuff
 *.DS_Store
+node_modules
