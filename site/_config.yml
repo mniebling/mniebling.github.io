@@ -23,7 +23,7 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: ../dist   # output directory for built static site
+public_dir: dist   # output directory for built static site
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
