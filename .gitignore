@@ -1,6 +1,7 @@
-# Don’t include the compiled site output
-dist
-
-# Don’t include Mac stuff
-*.DS_Store
 node_modules
+site/dist
+
+*.log
+*.DS_Store
+Thumbs.db
+db.json

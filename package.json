@@ -1,14 +1,10 @@
 {
   "name": "mikeniebling-dot-com",
   "version": "1.0.0",
-  "description": "mniebling.github.io -------------------",
+  "description": "mikeniebling.com",
   "main": "index.js",
   "scripts": {
-    "build": "node tasks/build.js",
-    "build:prod": "node tasks/build.js",
-    "hexo": "hexo",
-    "start": "browser-sync start --config browsersync.conf.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "hexo": "hexo"
   },
   "repository": {
     "type": "git",
