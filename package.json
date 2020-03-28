@@ -4,7 +4,8 @@
   "description": "mikeniebling.com",
   "main": "index.js",
   "scripts": {
-    "hexo": "hexo"
+    "hexo": "hexo",
+    "start": "cd site && npm start"
   },
   "repository": {
     "type": "git",
