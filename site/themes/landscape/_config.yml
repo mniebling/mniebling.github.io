@@ -2,6 +2,7 @@
 menu:
   Home: /
   Playlists: /playlists
+  Listening Queue: /queue
 rss: /atom.xml
 
 # Content
