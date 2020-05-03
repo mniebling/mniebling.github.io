@@ -1,0 +1,40 @@
+<div class="index-header">
+  <h1 class="index-h1">Mike Niebling</h1>
+  <div class="index-subtitle">Theme in development, that's for sure</div>
+</div>
+
+<div class="index-body">
+  <div class="index-section">
+    <h2 class="index-h2">Music</h2>
+
+    <div><a href="<%- url_for('/playlists') %>">Playlists</a></div>
+    <div><a href="<%- url_for('/queue') %>">Listening queue</a></div>
+
+    <%
+      const musicReportCategory = site.categories.findOne({ name: 'music report' })
+      const musicReports = musicReportCategory.posts.sort('date', 'desc')
+      const lastUpdated = moment(musicReports.data[0].updated).format('YYYY-MM-DD')
+    %>
+
+    <p>Music reports (last updated: <%= lastUpdated %>)</p>
+
+    <% musicReports.forEach(post => { %>
+      <div>
+        <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+      </div>
+    <% }) %>
+  </div>
+
+  <div class="index-section">
+    <h2 class="index-h2">Design</h2>
+
+    <% site.categories.filter(c => c.name === 'design').forEach(category => { %>
+      <% category.posts.sort('date', 'desc').forEach(post => { %>
+        <div>
+          <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+        </div>
+      <% }) %>
+    <% }) %>
+  </div>
+
+</div>

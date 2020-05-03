@@ -1,23 +1,25 @@
 ---
-layout: post
 title: Calvetica Redesign
+date: 2014-12-27
+categories:
+- design
 ---
 
-> A note: This is an older piece that I did for a now defunct blog. I wanted to port it over as a test case for the new site layout & approach. Calvetica has since redesigned its app quite a bit, and I still dig it; if you're in the market for an iOS calendar app, go check them out.
+> Note: This is an older piece that I did for a previous site. Calvetica has since redesigned its app quite a bit!
 
-![Calvetica: 1]({{site.img}}/calvetica/1.png)
+![](/images/calvetica/1.png)
 
 Here's the Calvetica home screen that I started with. The main thing I wanted to adjust was how much real estate/visual weight was given to the current year and the month picker (which is tappable — it changes the month displayed in the calendar below). I also wanted to add today's date and make a few other minor tweaks.
 
-![Calvetica: 2]({{site.img}}/calvetica/2.png)
+![](/images/calvetica/2.png)
 
 Since I figure the frequency at which you need to look at a given month is inversely proportional to how close it is to today, I collapsed the month picker down to one line. The left and right edges are faded out slightly as an affordance that the list is horizontally scrollable.
 
-![Calvetica: 3]({{site.img}}/calvetica/3.png)
+![](/images/calvetica/3.png)
 
 Next, since I wanted to add in today's date and the month picker change opened up some space, I decided to go with a more overtly header-y treatment at the top of the screen. Like the existing Calvetica detail pages, this section displays the full day and date, but I also swapped the Today shortcut with the settings icon so that all the "right now" stuff would be in the header. I also spelled out "Settings" on the bottom to be consistent with "Notifications."
 
-![Calvetica: 4]({{site.img}}/calvetica/4.png)
+![](/images/calvetica/4.png)
 
 Finally, I added a badge to the "today" link in the header so that the user doesn't have to look to the detailed calendar for the relative "busy-ness" of the current day.
 
