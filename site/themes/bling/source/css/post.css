@@ -12,8 +12,16 @@
   text-transform: capitalize;
 }
 
-.post-h1 {
+.post-body h1 {
   margin-bottom: 25px;
+}
+
+.post-body h2 {
+  margin-bottom: 20px;
+}
+
+.post-body h3 {
+  margin: 25px 0 15px 0;
 }
 
 .post-body {
@@ -39,7 +47,7 @@
   border-left: 2px solid #999;
   color: var(--blockquote-text-color);
   display: inline-block;
-  margin: 14px 0;
+  margin: 0;
   padding: 10px 20px;
 }
 

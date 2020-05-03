@@ -1,6 +1,8 @@
 ---
-layout: post
 title: User Research Interview Tips
+date: 2015-03-19
+categories:
+- design
 ---
 
 One of the things that surprised me the most about my master's program in [HCI](http://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction) was how much time we spent on user research methods like interviews, usability testing and [contextual inquiry](http://en.wikipedia.org/wiki/Contextual_inquiry). Those concepts seemed simple on the surface, but it turned out there's quite a bit more to it than just asking people what they like or what they do.

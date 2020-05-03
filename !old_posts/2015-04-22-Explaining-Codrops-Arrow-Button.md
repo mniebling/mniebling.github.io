@@ -1,6 +1,8 @@
 ---
-layout: post
-title: "Explaining Codrops #1: Arrow Button"
+title: "Breaking Down The Codrops Arrow Button"
+date: 2015-04-22
+categories:
+- design
 ---
 
 The folks over at [Codrops](http://tympanus.net/codrops/) put out a lot of cool demos for slick front-end UI effects. Oftentimes, I'll find myself wanting to use one of their styles but then having to dig through their  code and figure out which parts are specific to the effect I want vs. which parts are for styling their demo pages.
