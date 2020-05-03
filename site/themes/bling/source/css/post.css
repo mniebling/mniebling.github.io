@@ -33,9 +33,11 @@
 }
 
 .post-body blockquote {
+  --blockquote-text-color: #666;
+
   background-color: #f5f5f5;
   border-left: 2px solid #999;
-  color: #666;
+  color: var(--blockquote-text-color);
   display: inline-block;
   margin: 14px 0;
   padding: 10px 20px;
@@ -43,4 +45,10 @@
 
 .post-body blockquote p {
   margin: 0;
+}
+
+.post-body blockquote a,
+.post-body blockquote a:visited {
+  color: var(--blockquote-text-color);
+  text-decoration: underline;
 }
