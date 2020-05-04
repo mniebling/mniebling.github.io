@@ -1,0 +1,28 @@
+.review {
+  margin-bottom: 25px;
+}
+
+.review-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review-body p:first-of-type {
+  margin: 0;
+}
+
+.review-body {
+  margin-bottom: 5px;
+}
+
+.review-hot {
+  color: darkorange;
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.review-hot::before {
+  content: '🔥';
+  font-style: normal;
+}

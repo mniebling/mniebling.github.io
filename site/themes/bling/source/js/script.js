@@ -1,1 +1,1 @@
-console.info('Using bling theme')
+console.info('Running `bling` theme')

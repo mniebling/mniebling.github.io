@@ -1,6 +1,7 @@
 @import 'index.css';
 @import 'playlists.css';
 @import 'post.css';
+@import 'review.css';
 
 html {
   --color-primary: #258fb8;
