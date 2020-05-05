@@ -1,6 +1,6 @@
 <div class="index-header">
   <h1 class="index-h1">Mike Niebling</h1>
-  <div class="index-subtitle">Theme in development, that's for sure</div>
+  <div class="index-subtitle">Site in development, that's for sure</div>
 </div>
 
 <div class="index-body">
@@ -13,10 +13,10 @@
     <%
       const musicReportCategory = site.categories.findOne({ name: 'music report' })
       const musicReports = musicReportCategory.posts.sort('date', 'desc')
-      const lastUpdated = moment(musicReports.data[0].updated).format('YYYY-MM-DD')
+      const lastUpdated = moment(musicReports.sort('updated', 'desc').data[0].updated).format('YYYY-MM-DD')
     %>
 
-    <p>Music reports (last updated: <%= lastUpdated %>):</p>
+    <p>Music reports (last updated <%= lastUpdated %>):</p>
 
     <% musicReports.forEach(post => { %>
       <div>
@@ -35,6 +35,12 @@
         </div>
       <% }) %>
     <% }) %>
+  </div>
+
+  <div class="index-section">
+    <h2 class="index-h2">Projects</h2>
+
+    <a href="https://www.estherpomranky.com" target="_blank" rel="noopener">Esther's website</a>
   </div>
 
 </div>
