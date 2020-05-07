@@ -16,7 +16,7 @@
       const lastUpdated = moment(musicReports.sort('updated', 'desc').data[0].updated).format('YYYY-MM-DD')
     %>
 
-    <p>Music reports (last updated <%= lastUpdated %>):</p>
+    <p class="index-music-reports-header">Music reports (last updated <%= lastUpdated %>):</p>
 
     <% musicReports.forEach(post => { %>
       <div>
@@ -26,7 +26,7 @@
   </div>
 
   <div class="index-section">
-    <h2 class="index-h2">Design</h2>
+    <h2 class="index-h2">Writing</h2>
 
     <% site.categories.filter(c => c.name === 'design').forEach(category => { %>
       <% category.posts.sort('date', 'desc').forEach(post => { %>
@@ -35,6 +35,15 @@
         </div>
       <% }) %>
     <% }) %>
+  </div>
+
+  <div class="index-section">
+    <h2 class="index-h2">The Quantified Life</h2>
+
+    <div><a href="https://www.last.fm/user/thebling">Music (Last.fm)</a></div>
+    <div><a href="https://www.goodreads.com/user/show/104157118-mike">Books (Goodreads)</a></div>
+    <div><a href="https://letterboxd.com/thebling/">Movies (Letterboxd)</a></div>
+    <div><a href="https://www.tvtime.com/en/user/28913711/profile">TV shows (TV Time)</a></div>
   </div>
 
   <div class="index-section">
