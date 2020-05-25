@@ -25,4 +25,5 @@
 .review-hot::before {
   content: '🔥';
   font-style: normal;
+  margin-right: 4px;
 }
