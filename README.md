@@ -1,7 +1,7 @@
-mniebling.github.io
--------------------
+# `mikeniebling dot com`
 
-Mike's design & project [site](http://www.mikeniebling.com).
+
+Mike's personal [website](http://www.mikeniebling.com).
 
 
 ### Development
