@@ -4,8 +4,9 @@
   "description": "mikeniebling.com",
   "main": "index.js",
   "scripts": {
-    "hexo": "hexo",
-    "start": "cd site && npm start"
+    "build": "eleventy",
+    "clean": "rimraf dist",
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/mniebling/mikeniebling-dot-com#readme",
   "devDependencies": {
-    "hexo": "4.2.0"
+    "@11ty/eleventy": "0.11.0",
+    "hexo": "4.2.0",
+    "rimraf": "3.0.2"
   }
 }

@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+<div class="post">
+
+  <div class="post-links">
+    <a href="/">Home</a>
+  </div>
+
+  <div class="post-meta">
+    {{ tags }}
+  </div>
+
+  <div class="post-body">
+    <h1>{{ title }}</h1>
+
+    {{ content | safe }}
+  </div>
+</div>
