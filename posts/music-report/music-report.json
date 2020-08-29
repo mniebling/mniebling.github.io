@@ -1,0 +1,4 @@
+{
+  "layout": "post",
+  "permalink": "music-report/{{ title | snakeCase }}/"
+}
