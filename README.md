@@ -9,6 +9,4 @@ Mike's personal [website](http://www.mikeniebling.com).
 
 #### Commands
 
-`cd site` then...
-
-`npm start`: Serve the site at http://localhost:4000
+`npm start`: Serve the site locally for development.
