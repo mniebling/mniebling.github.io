@@ -5,9 +5,12 @@ const { outdent } = require("outdent")
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy('images')
 
   eleventyConfig.addFilter('snakeCase', function (value) {
-    return value.toLowerCase().replace(/\s/g, '-')
+    return value.toLowerCase()
+      .replace(/\s/g, '-')
+      .replace(/'/g, '')
   })
 
   let md = new markdownIt()
