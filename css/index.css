@@ -1,5 +1,9 @@
 .index-header {
-  margin: 0 0 40px 0;
+  background: var(--color-dark);
+  border-top: 4px solid var(--color-primary);
+  margin: 0 0 20px 0;
+  padding: 6px 20px 8px 20px;
+  position: relative;
 }
 
 .index-section {
@@ -8,6 +12,11 @@
 
 .index-subtitle {
   color: #777;
+}
+
+.index-h1 {
+  color: white;
+  margin: 0;
 }
 
 .index-h2 {
