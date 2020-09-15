@@ -1,6 +1,18 @@
 .post-links {
-  margin: 0 20px;
-  padding-top: 10px;
+  background: var(--color-dark);
+  border-top: 4px solid var(--color-primary);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.post-links a {
+  color: white;
+  text-decoration: underline;
+}
+
+.post-links a:hover,
+.post-links a:active {
+  color: var(--color-light);
 }
 
 .post-meta {
