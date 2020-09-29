@@ -7,12 +7,16 @@
   margin-bottom: 5px;
 }
 
-.review-body p:first-of-type {
-  margin: 0;
+.review-body {
+  margin-bottom: 10px;
 }
 
-.review-body {
-  margin-bottom: 5px;
+.review-body p:first-of-type {
+  margin-top: 0;
+}
+
+.review-body p:last-of-type {
+  margin-bottom: 0;
 }
 
 .review-hot {
