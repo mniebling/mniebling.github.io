@@ -1,0 +1,39 @@
+---
+layout: base
+---
+
+<!-- https://stackoverflow.com/a/46750893 -->
+<link rel="stylesheet" href="https://mtgify.org/dist/autocard.css" media="print" onload="this.media='all'">
+<script src="https://mtgify.org/dist/autocard.js" async></script>
+
+<!-- MTGify automatically creates links to card dbs but we want the links to go to the decklists -->
+<script>
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+
+      const addedNode = Array.from(mutation.addedNodes)[0] // strong assumption here, but it holds for the simple markdown pages
+
+      if (addedNode && addedNode.tagName === 'IMG') { // this is MTGify creating the image tag
+        const link = mutation.target
+        const deckUrl = link.closest('auto-card-image').getAttribute('data-deck-url')
+        link.href = deckUrl
+      }
+    })
+  })
+
+  observer.observe(document.body, { attributes: false, childList: true, characterData: false, subtree: true })
+</script>
+
+<!-- Nesting this did not play nicely, so it is a copy/paste of post.njk -->
+<div class="post">
+
+  <div class="post-links">
+    <a href="/">Home</a>
+  </div>
+
+  <div class="post-body">
+    <h1>{{ title }}</h1>
+
+    {{ content | safe }}
+  </div>
+</div>

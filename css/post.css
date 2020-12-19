@@ -74,3 +74,10 @@
   color: var(--blockquote-text-color);
   text-decoration: underline;
 }
+
+.post-body code {
+  background: var(--color-x-light);
+  border-radius: 3px;
+  color: var(--color-dark);
+  padding: 4px 8px;
+}

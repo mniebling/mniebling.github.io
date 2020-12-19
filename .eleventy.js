@@ -1,5 +1,5 @@
-const markdownIt = require("markdown-it")
-const { outdent } = require("outdent")
+const markdownIt = require('markdown-it')
+const { outdent } = require('outdent')
 
 
 module.exports = function (eleventyConfig) {
