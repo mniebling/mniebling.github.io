@@ -44,6 +44,11 @@ module.exports = function (eleventyConfig) {
     )
   })
 
+  eleventyConfig.addPairedShortcode('cards', function (body) {
+
+    return `<p class="cards">${ body }</p>`
+  })
+
   return {
     dir: {
       includes: 'includes',

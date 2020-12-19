@@ -16,7 +16,7 @@ layout: base
       if (addedNode && addedNode.tagName === 'IMG') { // this is MTGify creating the image tag
         const link = mutation.target
         const deckUrl = link.closest('auto-card-image').getAttribute('data-deck-url')
-        link.href = deckUrl
+        setTimeout(() => mutation.target.setAttribute('href', deckUrl)) // there's a race condition with MTGify so we need the timeout
       }
     })
   })

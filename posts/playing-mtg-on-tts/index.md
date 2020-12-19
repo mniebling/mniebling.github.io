@@ -18,6 +18,12 @@ Once you're in a session, import a deck by typing (case-sensitive):
 You can import decks from a lot of sources but I use [M:TG Goldfish](https://www.mtggoldfish.com). The import is a little touchy; decks from there have to be user decklists (not price lists or archetypes). So, here are some Commander precons that are already imported in the correct format.
 
 
-### Commander 2020
+### Commander 2020 (Ikoria)
 
-<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3633408#paper">Kalamax, the Stormsire</auto-card-image>
+{% cards %}
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3633408">Kalamax, the Stormsire</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3633678">Otrimi, the Ever-Playful</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3633680">Jirina Kudro</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3633681">Kathril, Aspect Warper</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3633683">Gavi, Nest Warden</auto-card-image>
+{% endcards %}
