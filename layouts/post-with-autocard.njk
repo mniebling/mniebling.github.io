@@ -22,6 +22,11 @@ layout: base
   })
 
   observer.observe(document.body, { attributes: false, childList: true, characterData: false, subtree: true })
+
+  MTGIFY_CONFIG = {
+    linkSource: 'scryfall',
+    imgSource: 'scryfall',
+  }
 </script>
 
 <!-- Nesting this did not play nicely, so it is a copy/paste of post.njk -->
