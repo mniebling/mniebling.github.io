@@ -20,14 +20,10 @@ You can import decks from a lot of sources but I use [M:TG Goldfish](https://www
 
 ### Commander Legends
 
-<!-- {% cards %}
+{% cards %}
 <auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3635526">Aesi, Tyrant of Gyre Strait</auto-card-image>
 <auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3635529">Wyleth, Soul of Steel</auto-card-image>
-{% endcards %} -->
-
-[Aesi, Tyrant of Gyre Strait](https://www.mtggoldfish.com/deck/3635526)
-
-[Wyleth, Soul of Steel](https://www.mtggoldfish.com/deck/3635529)
+{% endcards %}
 
 ### Commander 2020 (Ikoria)
 
@@ -43,5 +39,18 @@ You can import decks from a lot of sources but I use [M:TG Goldfish](https://www
 
 {% cards %}
 <auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3635544">Kadena, Slinking Sorcerer</auto-card-image>
-<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3635547">Ral Zarek</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661597">Sevinne, the Chronoclasm</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661600">Ghired, Conclave Exile</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661605">Anje Falkenrath</auto-card-image>
 {% endcards %}
+
+### Commander 2018
+
+{% cards %}
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661614">Saheeli, the Gifted</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661617">Lord Windgrace</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661622">Estrid, the Masked</auto-card-image>
+<auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3661615">Aminatou, the Fateshifter</auto-card-image>
+{% endcards %}
+
+<!-- <auto-card-image data-deck-url="https://www.mtggoldfish.com/deck/3635547">Ral Zarek</auto-card-image> -->
