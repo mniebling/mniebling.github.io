@@ -4,7 +4,6 @@ layout: base
 
 <div class="index-header">
   <h1 class="index-h1">Mike Niebling</h1>
-  {# <div class="index-subtitle">Site in development, that's for sure</div> #}
 </div>
 
 <div class="container">
@@ -15,12 +14,13 @@ layout: base
       <div><a href="/playlists">Playlists</a></div>
       <div><a href="/queue">Listening queue</a></div>
 
-      <p class="index-music-reports-header">Music reports:</p>
+      <p class="index-music-reports-header">In 2020 I made a resolution to review all the records I liked.
+      It became a nice challenge and sharpened my thinking and writing about music, although I did fall off
+      at the end of the year when life got crazy. Here are my reviews, month-by-month:</p>
 
-      {%- for post in collections['music report'] | reverse -%}
-        <div>
-          <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </div>
+      {%- for post in collections['music report'] -%}
+        <a href="{{ post.url }}">{{ post.data.title.slice(0, 3) }}</a>
+        {% if loop.index !== 12 %}<span> • </span>{% endif %}
       {%- endfor -%}
     </div>
 
