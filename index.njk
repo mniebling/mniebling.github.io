@@ -25,16 +25,6 @@ layout: base
     </div>
 
     <div class="index-section">
-      <h2 class="index-h2">Writing</h2>
-
-      {%- for post in collections.design | reverse -%}
-        <div>
-          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </div>
-      {%- endfor -%}
-    </div>
-
-    <div class="index-section">
       <h2 class="index-h2">The Quantified Life</h2>
 
       <div><a href="https://www.last.fm/user/thebling">Music (Last.fm)</a></div>
@@ -67,5 +57,16 @@ layout: base
         A simple project to help us in our house search. It helps visualize what places are near an address within various walking distances.
       </p>
     </div>
+
+    <div class="index-section">
+      <h2 class="index-h2">Writing</h2>
+
+      {%- for post in collections.design | reverse -%}
+        <div>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </div>
+      {%- endfor -%}
+    </div>
+
   </div>
 </div>
